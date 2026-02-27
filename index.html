@@ -228,6 +228,31 @@
     
     <!-- Стили для выпадающего списка и вкладок -->
     <style>
+@media (max-width: 768px) {
+    /* ... ваши предыдущие стили ... */
+
+    #experience {
+        display: block;
+        width: 100%;
+        /* Резервируем место под 4 строки текста, чтобы контент снизу не дергался */
+        min-height: 80px; 
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal; /* Разрешаем перенос строк */
+        line-height: 1.5;
+    }
+
+    .typewriter {
+        display: inline; /* Чтобы курсор шел сразу за текстом */
+        word-break: break-word;
+    }
+
+    #cursor {
+        display: inline-block;
+        margin-left: 2px;
+        vertical-align: middle;
+    }
+}
         .theme-selector {
             position: fixed;
             bottom: 20px;
@@ -275,6 +300,7 @@
         .tab-content.active {
             display: block;
         }
+        
     </style>
 </body>
 </html>
