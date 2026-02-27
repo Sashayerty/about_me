@@ -25,10 +25,22 @@
             <div class="terminal-header-button yellow"></div>
             <div class="terminal-header-button green"></div>
             <div class="terminal-tabs">
-                <button class="tab-button active" data-tab="main">~/main</button>
-                <button class="tab-button" data-tab="extra">~/extra</button>
-                <button class="tab-button" data-tab="links">~/links</button>
-            </div>
+        <button class="tab-button active" data-tab="main">~/main</button>
+        <button class="tab-button" data-tab="extra">~/extra</button>
+        <button class="tab-button" data-tab="links">~/links</button>
+        
+        <div class="theme-tab-container">
+            <select id="theme-select" class="theme-select-inline" onchange="changeTheme()">
+                <option value="gruvbox" selected>gruvbox</option>
+                <option value="everforest">everforest</option>
+                <option value="dracula">dracula</option>
+                <option value="nord">nord</option>
+                <option value="onedark">onedark</option>
+                <option value="wombat">wombat</option>
+                <option value="zenburn">zenburn</option>
+            </select>
+        </div>
+    </div>
         </div>
         <div class="terminal-body">
             <div class="tab-content active" id="main">
@@ -165,17 +177,6 @@
     </div>
     
     <!-- Выпадающий список тем -->
-    <div class="theme-selector">
-        <select id="theme-select" onchange="changeTheme()">
-            <option value="gruvbox" selected>Gruvbox</option>
-            <option value="everforest">Everforest</option>
-            <option value="dracula">Dracula</option>
-            <option value="nord">Nord</option>
-            <option value="onedark">OneDark</option>
-            <option value="wombat">Wombat</option>
-            <option value="zenburn">Zenburn</option>
-        </select>
-    </div>
     
     <script>
         // Загружаем сохранённую тему при загрузке страницы
@@ -253,22 +254,40 @@
         vertical-align: middle;
     }
 }
-        .theme-selector {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        
-        .theme-selector select {
-            padding: 8px 12px;
-            background-color: var(--bg-light);
-            color: var(--fg);
-            border: 1px solid var(--bg-darker);
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'Fira Code', monospace;
-        }
+        /* Новый стиль для селектора внутри хедера */
+.theme-select-inline {
+    background-color: var(--bg-light); /* Или другой цвет фона из ваших тем */
+    color: var(--fg);
+    border: 1px solid var(--bg-darker);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px; /* Отступ от вкладок */
+    height: 28px; /* Чтобы совпадало по высоте с кнопками */
+}
+
+.theme-select-inline:hover {
+    border-color: var(--aqua); /* Подсветка при наведении */
+}
+
+/* Адаптация для мобилок */
+@media (max-width: 768px) {
+    .terminal-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .theme-select-inline {
+        margin-left: 0;
+        width: 100%; /* На мобилках селектор займет всю ширину под вкладками */
+        text-align: center;
+        margin-top: 5px;
+    }
+}
         
         /* Стили для вкладок */
         .terminal-tabs {
