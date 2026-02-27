@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Булгаков | Python Backend Developer</title>
+    <!-- Основная тема (Gruvbox) -->
+    <link rel="stylesheet" href="./styles/styles_gruvbox.css" id="gruvbox-theme" title="theme">
+    <!-- Альтернативные темы -->
+    <link rel="stylesheet" href="./styles/styles_everforest.css" id="everforest-theme" title="theme" disabled>
+    <link rel="stylesheet" href="./styles/styles_dracula.css" id="dracula-theme" title="theme" disabled>
+    <link rel="stylesheet" href="./styles/styles_nord.css" id="nord-theme" title="theme" disabled>
+    <link rel="stylesheet" href="./styles/styles_onedark.css" id="onedark-theme" title="theme" disabled>
+    <link rel="stylesheet" href="./styles/styles_wombat.css" id="wombat-theme" title="theme" disabled>
+    <link rel="stylesheet" href="./styles/styles_zenburn.css" id="zenburn-theme" title="theme" disabled>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-header-button red"></div>
+            <div class="terminal-header-button yellow"></div>
+            <div class="terminal-header-button green"></div>
+            <div class="terminal-tabs">
+                <button class="tab-button active" data-tab="main">~/main</button>
+                <button class="tab-button" data-tab="extra">~/extra</button>
+                <button class="tab-button" data-tab="links">~/links</button>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="tab-content active" id="main">
+                <div class="terminal-content">
+                <p><span class="prompt">~</span> <span class="command">whoami</span></p>
+                <p>
+                    Привет! Меня зовут Александр Булгаков, мне 19 лет. Я backend-разработчик, AI-инженер и n8n-инженер. Увлекаюсь бэкендом и программированием с 15 лет, люблю шахматы. Готов развиваться и учиться, считаю, что ошибка, в первую очередь, это опыт, который получается при её исправлении.  
+                </p>
+
+                <p><span class="prompt">~</span> <span class="command">status</span></p>
+<p>
+    <strong>Доступен для предложений:</strong> Готов работать, стажироваться, учиться и развиваться.<br>
+    <strong>График:</strong> Удаленно / Гибрид (готов совмещать с учебой без потери качества).
+</p>
+                
+                <p><span class="prompt">~</span> <span class="command">skills</span></p>
+                <p>
+                    Python (FastAPI, Flask, Django), PostgreSQL, SQLite, LangChain, OpenAI API, Mistral, Ollama, Docker, CI/CD (GitHub Actions), Git, n8n
+                </p>
+                
+                <p><span class="prompt">~</span> <span class="command">projects</span></p>
+                <p>
+                    <i class="fas fa-code-branch"></i> <a href="https://github.com/Sashayerty/kairos" target="_blank">Kairos <i class="fas fa-external-link-alt"></i></a> - Flask + Mistral, генерация учебных курсов через ИИ-агентов.<br>
+                    <i class="fas fa-code-branch"></i> <a href="https://github.com/Sashayerty/kairos-fastapi" target="_blank">Kairos FastAPI <i class="fas fa-external-link-alt"></i></a> - REST-порт проекта Kairos на FastAPI.<br>
+                    <i class="fas fa-code-branch"></i> <a href="https://github.com/Sashayerty/commit_maker" target="_blank">Commit Maker <i class="fas fa-external-link-alt"></i></a> - CLI-утилита для генерации git-коммитов, опубликована на PyPI.<br>
+                    <i class="fas fa-code-branch"></i> <a href="https://github.com/Sashayerty/bookslice" target="_blank">BookSlice <i class="fas fa-external-link-alt"></i></a> - Flask-сервис для чтения и суммаризации книг.<br>
+                    <i class="fas fa-code-branch"></i> <a href="https://github.com/KirillCodeCreator/CodeFest" target="_blank">VoiceHub (CodeFest) <i class="fas fa-external-link-alt"></i></a> - командный проект, мной реализованна backend-часть, ИИ-интеграция и ИИ-пайплайн.
+                </p>
+                
+                <p><span class="prompt">~</span> <span class="command">education</span></p>
+                <p>
+                    <i class="fas fa-graduation-cap"></i> <strong>МАИ (Московский авиационный институт)</strong> - 1 курс, «Информационная безопасность телекоммуникационных систем» (2025 - н.в.)<br>
+                    <i class="fas fa-graduation-cap"></i> <strong>Яндекс.Лицей</strong> - курсы «Основы программирования на Python» и «Основы промышленного программирования» (сертификаты).
+                </p>
+                
+                <p><span class="prompt">~</span> <span class="command">achievements</span></p>
+                <p>
+                    <i class="fas fa-trophy"></i> <strong>1 место</strong> в хакатоне <strong>ТерраЛинк</strong> (2024) - разработка backend-решения в команде.<br>
+                    <i class="fas fa-trophy"></i> <strong>Финалист</strong> командного конкурса <strong>Сириус.ИИ</strong> - поездка на финал в Сочи (Сириус).
+                </p>
+                
+                <!-- <p><span class="prompt">~</span> <span class="command">contact</span></p>
+                <p>
+                    <i class="fab fa-github"></i> GitHub: <a href="https://github.com/Sashayerty" target="_blank">Sashayerty</a><br>
+                    <i class="fab fa-telegram-plane"></i> Telegram: <a href="https://t.me/Sashayerty" target="_blank">@Sashayerty</a>
+                </p> -->
+                
+
+
+                
+                <p><span class="prompt">~</span> <span class="command">experience</span></p>
+                <p id="experience">
+                    <span class="typewriter"></span><span class="blink" id="cursor">|</span>
+                </p>
+                
+                <script>
+                    // Typewriter Effect только для раздела "Опыт"
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const experienceTexts = [
+                            "- Проектирование и реализация ИИ-пайплайнов и автоматизированных рабочих процессов (AI workflow, n8n, prompt engineering).",
+                            "- Разработка и интеграция сервисов с внешними API, создание REST-эндпоинтов на FastAPI и Flask.",
+                            "- Настройка CI/CD, контейнеризация и оркестрация сервисов с использованием Docker.",
+                            "- Разработка CLI-утилит для автоматизации процессов генерации данных и UI-прототипов.",
+                        ];
+                        
+                        const typewriterElement = document.querySelector('.typewriter');
+                        let textIndex = 0;
+                        let charIndex = 0;
+                        let isDeleting = false;
+                        
+                        function type() {
+                            const currentText = experienceTexts[textIndex];
+                            if (isDeleting) {
+                                typewriterElement.textContent = currentText.substring(0, charIndex);
+                                charIndex--;
+                            } else {
+                                typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                                charIndex++;
+                            }
+                            
+                            if (!isDeleting && charIndex === currentText.length) {
+                                setTimeout(() => isDeleting = true, 2000);
+                            } else if (isDeleting && charIndex === 0) {
+                                isDeleting = false;
+                                textIndex = (textIndex + 1) % experienceTexts.length;
+                            }
+                            
+                            const typingSpeed = isDeleting ? 30 : 50;
+                            setTimeout(type, typingSpeed);
+                        }
+                        
+                        setTimeout(type, 1000);
+                    });
+                </script>
+                
+                <script>
+                    // Анимация курсора
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const cursor = document.getElementById('cursor');
+                        setInterval(() => {
+                            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+                        }, 500);
+                    });
+                </script>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="links">
+            <div class="terminal-content">
+                <p><span class="prompt">~</span> <span class="command">links</span></p>
+                <p>
+                    <i class="fas fa-chess"></i> <a href="https://lichess.org/@/Sasanyas" target="_blank">Lichess <i class="fas fa-external-link-alt"></i></a><br>
+                    <i class="fab fa-steam"></i> <a href="https://steamcommunity.com/id/Sashayerty/" target="_blank">Steam <i class="fas fa-external-link-alt"></i></a><br>
+                    <i class="fab fa-github"></i> <a href="https://github.com/Sashayerty" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a><br>
+                    <i class="fab fa-telegram-plane"></i> <a href="https://t.me/sashayerty" target="_blank">Telegram <i class="fas fa-external-link-alt"></i></a><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="extra">
+    <div class="terminal-content">
+        <p><span class="prompt">~</span> <span class="command">extra --verbose</span></p>
+        <p>
+            <i class="fab fa-linux"></i> <strong>Linux & Ops:</strong> Умею настраивать окружение, работать с bash-скриптами. Свободно чувствую себя в SSH-сессиях.<br>
+                       
+            <i class="fas fa-file-alt"></i> <strong>Документация:</strong> Придерживаюсь принципа, что код должен быть понятным, пишу документацию и следую кодстайлам.<br>
+            
+            <i class="fas fa-project-diagram"></i> <strong>Архитектура:</strong> Понимаю принципы RESTful API и основы микросервисной архитектуры.<br>
+
+            <i class="fas fa-brain"></i> <strong>Prompt Engineering:</strong> Глубокое понимание работы LLM. Умею строить сложные цепочки и агентов, минимизируя галлюцинации.
+        </p>
+    </div>
+</div>
+    </div>
+    
+    <!-- Выпадающий список тем -->
+    <div class="theme-selector">
+        <select id="theme-select" onchange="changeTheme()">
+            <option value="gruvbox" selected>Gruvbox</option>
+            <option value="everforest">Everforest</option>
+            <option value="dracula">Dracula</option>
+            <option value="nord">Nord</option>
+            <option value="onedark">OneDark</option>
+            <option value="wombat">Wombat</option>
+            <option value="zenburn">Zenburn</option>
+        </select>
+    </div>
+    
+    <script>
+        // Загружаем сохранённую тему при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+                const themeSelect = document.getElementById('theme-select');
+                themeSelect.value = savedTheme;
+                changeTheme(savedTheme);
+            }
+            
+            // Инициализация вкладок
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+
+                    // Убираем активный класс у всех кнопок и контентов
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Добавляем активный класс выбранной кнопке и контенту
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+        function changeTheme(theme) {
+            const themeSelect = document.getElementById('theme-select');
+            const selectedTheme = theme || themeSelect.value;
+
+            // Отключаем все темы
+            document.querySelectorAll('link[title="theme"]').forEach(link => {
+                link.disabled = true;
+            });
+
+            // Включаем выбранную тему
+            const themeLink = document.getElementById(`${selectedTheme}-theme`);
+            if (themeLink) {
+                themeLink.disabled = false;
+            }
+
+            // Сохраняем выбранную тему в localStorage
+            localStorage.setItem('selectedTheme', selectedTheme);
+        }
+    </script>
+    
+    <!-- Стили для выпадающего списка и вкладок -->
+    <style>
+        .theme-selector {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .theme-selector select {
+            padding: 8px 12px;
+            background-color: var(--bg-light);
+            color: var(--fg);
+            border: 1px solid var(--bg-darker);
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Fira Code', monospace;
+        }
+        
+        /* Стили для вкладок */
+        .terminal-tabs {
+            display: flex;
+            margin-left: auto;
+            gap: 5px;
+        }
+        
+        .tab-button {
+            padding: 5px 10px;
+            background-color: var(--bg-light);
+            color: var(--fg);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+        }
+        
+        .tab-button.active {
+            background-color: var(--bg-darker);
+            color: var(--aqua);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</body>
+</html>

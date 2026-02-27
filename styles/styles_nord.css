@@ -1,0 +1,35 @@
+:root {
+    --bg-dark: #3b4252;      /* Nord 1 */
+    --bg-darker: #2e3440;    /* Nord 0 */
+    --bg-light: #4c566a;     /* Nord 3 */
+    --fg: #d8dee9;           /* Nord 4 */
+    
+    --red: #bf616a;          /* Nord 11 */
+    --green: #a3be8c;        /* Nord 14 */
+    --yellow: #ebcb8b;       /* Nord 13 */
+    --blue: #81a1c1;         /* Nord 9 */
+    --purple: #b48ead;       /* Nord 15 */
+    --aqua: #88c0d0;         /* Nord 8 */
+    --orange: #d08770;       /* Nord 12 */
+}
+
+.prompt { color: var(--aqua); }
+.command { color: var(--blue); }
+a { color: var(--aqua); text-decoration: none; }
+a:hover { color: var(--yellow); text-decoration: underline; }
+.blink { color: var(--fg); }
+
+/* Остальной CSS (базовые стили терминала) */
+body { margin: 0; padding: 0; background-color: var(--bg-dark); color: var(--fg); font-family: 'Fira Code', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.terminal { width: 90%; max-width: 800px; background-color: var(--bg-darker); border-radius: 8px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); overflow: hidden; border: 1px solid var(--bg-light); }
+.terminal-header { background-color: var(--bg-light); padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+.terminal-header-button { width: 12px; height: 12px; border-radius: 50%; }
+.terminal-header-button.red { background-color: var(--red); }
+.terminal-header-button.yellow { background-color: var(--yellow); }
+.terminal-header-button.green { background-color: var(--green); }
+.terminal-header-title { margin-left: 12px; font-size: 14px; color: var(--fg); }
+.terminal-body { padding: 20px; font-size: 16px; line-height: 1.5; color: var(--fg); }
+.terminal-content p { margin: 8px 0; }
+.blink { display: inline-block; width: 8px; height: 20px; animation: vscodeCursorBlink 1.2s infinite ease-in-out; }
+@keyframes vscodeCursorBlink { 0%, 100% { opacity: 1; transform: scaleY(1); } 50% { opacity: 0.5; transform: scaleY(0.05); } }
+@media (max-width: 768px) { body { height: 100vh; } .terminal { width: 100%; height: 100vh; border-radius: 0; } .terminal-body { padding: 15px; font-size: 14px; height: calc(100vh - 40px); overflow-y: auto; } }
